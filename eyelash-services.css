@@ -1,0 +1,120 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #2f2f2f;
+}
+
+h1.page-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin: 50px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.service-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.service-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.service-content h3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  margin: 0;
+  color: #555;
+  text-transform: capitalize;
+  letter-spacing: 0.08em;
+}
+
+.service-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+  text-align: justify;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.02em;
+}
+
+.service-content a.book-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  width: fit-content;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-content a.book-btn:hover {
+  background: #d81b1b;
+}
+
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-section:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .service-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .service-content p {
+    text-align: justify;
+    font-size: 18px;
+  }
+  .service-content a.book-btn {
+    display: inline-block;      /* ensures block-level styling */
+    margin: 20px auto 0;        /* center horizontally and add top margin */
+    text-align: center;         /* center text inside button */
+  }
+}

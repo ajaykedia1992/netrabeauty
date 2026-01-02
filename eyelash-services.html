@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyelash Extension Services | Netra Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="eyelash-services.css">
+</head>
+<body>
+	<header class="navbar">
+	    <div class="logo">
+	      <img src="logo.png" alt="Netra Beauty Logo">
+	    </div>
+
+	    <div class="hamburger">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	    </div>
+
+	    <nav class="nav-left">
+	      <a href="index.html#home">Home</a>
+	      <a href="netrabeautyacademy.html">Training & Courses</a>
+	      <a href="index.html#products">Services</a>
+	      <a href="index.html#gift-cards">Gift Cards</a>
+	      <a href="index.html#contact">Contact</a>
+	      <a href="index.html#testimonials">Testimonials</a>
+	      <a href="policy.html">Policies</a>
+	    </nav>
+	</header>
+
+	<h1 class="page-title">Eyelash Extension Services</h1>
+
+	<div id="services-container"></div>
+
+	<footer class="footer">
+  <div class="footer-column">
+    <h4>Information</h4>
+    <ul>
+      <li>
+        <b>Service Hours</b>
+        <ul class="service-hours">
+          <li>SUNDAY: 11:00 am – 8:30 pm</li>
+          <li>MONDAY: 9:30 am – 7:30 pm</li>
+          <li>TUESDAY: 9:30 am – 7:30 pm</li>
+          <li>WEDNESDAY: 9:30 am – 7:30 pm</li>
+          <li>THURSDAY: 9:30 am – 7:30 pm</li>
+          <li>FRIDAY: 9:30 am – 6:30 pm</li>
+          <li style="color: red;">SATURDAY: Closed</li>
+        </ul>
+      </li>
+      <li><a href="terms-of-service.html"><b>Terms of Service</b></a></li>
+      <li><a href="privacy-policy.html"><b>Privacy Policy</b></a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h4>Explore</h4>
+    <ul>
+      <li>
+        <b>Location</b>
+        <ul class="footer-details">
+          <li>20150 81 Ave,</li>
+          <li>Langley Township,</li>
+          <li>BC, Canada, V2Y 3L8</li>
+        </ul>
+      </li>
+      <li>
+        <b>Parking</b>
+        <ul class="footer-details">
+          <li>Visitor Parking in the area</li>
+        </ul>
+      </li>
+      <li>
+        <b>Contact Us</b>
+        <ul class="footer-details">
+          <li>Phone: <a href="tel:+13063173632">+1 306-317-3632</a></li>
+          <li>Email: <a href="mailto:info@netrabeauty.com">netrabeauty@gmail.com</a></li>
+        </ul>
+      </li>
+      <li>
+        <b>Follow Us</b>
+        <div class="social-link">
+          <a href="https://www.facebook.com/netrabeautybynidhi" target="_blank" class="social-link"><img src="facebook.svg" alt="Facebook" class="social-icon"></a>
+          <a href="https://www.instagram.com/netrabeautybynidhi" target="_blank" class="social-link"><img src="instagram.svg" alt="Instagram" class="social-icon"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="footer-column">
+    <h4>Our Location</h4>
+    <a href="https://maps.app.goo.gl/VersHYzdJRQ5hNmg6" target="_blank" class="map"><img src="map.png" alt="map"></a>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  ©2026 Netra Beauty. All rights reserved.
+</div>
+
+	<script src="eyelash_extension.js"></script>
+	<script src="eyelash-services.js"></script>
+	<script>
+	  document.addEventListener("DOMContentLoaded", function() {
+	  const hamburger = document.querySelector(".hamburger");
+	  const navLeft = document.querySelector(".nav-left");
+
+	  hamburger.addEventListener("click", () => {
+	    navLeft.classList.toggle("active");
+	  });
+	});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2f2f2f;
+  background: #fdfdfd;
+  line-height: 1.6;
+}
+
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 160px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.top-left {
+  flex: 1 1 400px;
+}
+
+.top-left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+.top-left p {
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.04em;
+  font-family: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+.top-right img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* SERVICES SECTION */
+.services-section {
+  padding: 20px 160px;
+}
+
+
+.service-card {
+  padding: 25px;
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.service-number {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #dcdcdc;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+}
+
+.service-text {
+  flex: 1;
+  text-align: left;
+}
+
+.service-text p {
+  text-align: justify;
+}
+
+.service-card h3 a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+
+.service-image {
+  flex-shrink: 0;
+}
+
+.service-image img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* optional, remove if you want flat */
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+  letter-spacing: 0.04em;
+  font-family: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+.service-card a.book-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Fix large paddings */
+  .top-section,
+  .services-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .top-left h1 {
+    font-size: 28px;
+  }
+
+
+  /* Ensure images don’t overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .service-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-image {
+    order: 2;
+  }
+
+  .service-text {
+    display: contents;
+  }
+  .service-card h3,
+  .service-card p {
+    order: 1;
+    text-align: justify;
+  }
+  .service-image img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+  .service-card a.book-btn {
+    order: 3;
+    margin-top: 12px;
+    align-self: center;
+  }
+  .top-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-right img {
+    margin: 0 auto;
+  }
+
+}
