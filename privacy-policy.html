@@ -210,8 +210,12 @@
   </footer>
 
   <div class="footer-bottom">
-    ©2026 Netra Beauty. All rights reserved.
+    © <span id="year"></span> Netra Beauty. All rights reserved.
   </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
